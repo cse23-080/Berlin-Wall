@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Why It Matters | Berlin Wall Story</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="voices.html">Voices</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="impact.html" class="active">Why It Matters</a>
+    </nav>
+    <h1>Why It Matters</h1>
+  </header>
+  <main>
+    <section>
+      <h2>The Global Impact of the Berlin Wall</h2>
+      <p>
+        The fall of the Berlin Wall marked the end of the Cold War, symbolizing the triumph of freedom over oppression. It paved the way for German reunification and inspired movements for democracy worldwide.
+      </p>
+    </section>
+    <section>
+      <h2>Reflection</h2>
+      <form id="reflection-form">
+        <label for="reflection">What does the story of the Berlin Wall mean to you?</label>
+        <textarea id="reflection" name="reflection" rows="4" required></textarea>
+        <button type="submit">Submit Reflection</button>
+      </form>
+      <div id="reflection-response"></div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Berlin Wall Story
+  </footer>
+  <script>
+    // Reflection form handler (no backend)
+    document.getElementById('reflection-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const val = document.getElementById('reflection').value.trim();
+      if(val) {
+        document.getElementById('reflection-response').innerHTML = `<p>Thank you for your reflection!</p>`;
+        document.getElementById('reflection').value = '';
+      }
+    });
+  </script>
+</body>
+</html>
