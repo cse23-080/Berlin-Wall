@@ -1,0 +1,24 @@
+[
+  {
+    "quote": "Mr. Gorbachev, tear down this wall!",
+    "author": "Ronald Reagan",
+    "context": "Speech at the Brandenburg Gate, 1987",
+    "audio": "reagan-tear-down-this-wall.mp3"
+  },
+  {
+    "quote": "Ich bin ein Berliner.",
+    "author": "John F. Kennedy",
+    "context": "Speech in West Berlin, 1963",
+    "audio": "kennedy-ich-bin-ein-berliner.mp3"
+  },
+  {
+    "quote": "Nobody has the intention of building a wall.",
+    "author": "Walter Ulbricht",
+    "context": "Press conference, East Berlin, 1961"
+  },
+  {
+    "quote": "For us, the Wall will always be a symbol of hope.",
+    "author": "Anonymous Berliner",
+    "context": "After the wall fell, 1989"
+  }
+]
