@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding-bottom: 1em;
+  position: relative;
+}
+
+.hero {
+  background: url('../assets/images/berlinwall_hero.jpg') center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.hero .overlay {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 3em 2em;
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  position: relative;
+  z-index: 2;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.4em 1em;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a.active, nav a:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+.intro {
+  background: #fff;
+  padding: 2em 1em;
+  max-width: 700px;
+  margin: -4em auto 2em auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.intro-image {
+  max-width: 100%;
+  margin-top: 1.5em;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 2em;
+}
+
+h1, h2 {
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.voices-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  padding: 2em 1em;
+}
+
+.voice-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 1.5em;
+  max-width: 340px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.voice-quote {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.voice-author {
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.voice-context {
+  color: #666;
+  font-size: 0.98em;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  padding: 2em 1em;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.10);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.04);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80vw;
+  max-height: 70vh;
+  border-radius: 6px;
+}
+
+#caption {
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .intro {
+    margin-top: 0.5em;
+  }
+  .hero-content {
+    padding: 2em 0.8em;
+  }
+}
