@@ -1,0 +1,26 @@
+[
+  {
+    "date": "1961-08-13",
+    "title": "Construction Begins",
+    "description": "East Germany begins building the Berlin Wall overnight, dividing East and West Berlin.",
+    "image": "wall-construction.jpg"
+  },
+  {
+    "date": "1963-06-26",
+    "title": "\"Ich bin ein Berliner\"",
+    "description": "U.S. President John F. Kennedy delivers his famous speech in West Berlin, expressing support for the city's residents.",
+    "image": "kennedy-speech.jpg"
+  },
+  {
+    "date": "1987-06-12",
+    "title": "\"Tear Down This Wall!\"",
+    "description": "Ronald Reagan calls on Soviet leader Mikhail Gorbachev to open the barrier.",
+    "image": "reagan-speech.jpg"
+  },
+  {
+    "date": "1989-11-09",
+    "title": "The Fall of the Wall",
+    "description": "Border crossings open, thousands flood across, and the Berlin Wall effectively falls.",
+    "image": "wall-fall.jpg"
+  }
+]
